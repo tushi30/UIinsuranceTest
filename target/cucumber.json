@@ -1,0 +1,204 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#Valid  user should be able to search insurance status using vehicle registration"
+          }
+        ],
+        "line": 5,
+        "name": "Valid vehicle search",
+        "description": "",
+        "id": "vehicle-inquiry;valid-vehicle-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12278526399,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "An authorised user navigates to the covercheck website",
+            "match": {
+              "location": "VehicleSearchStep.an_authorised_user_navigates_to_the_covercheck_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240167300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The User  enters the desired registration number in the enter reg field",
+            "match": {
+              "location": "VehicleSearchStep.the_User_enters_the_desired_registration_number_in_the_enter_reg_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 118398100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user clicks on the find vehicle link",
+            "match": {
+              "location": "VehicleSearchStep.the_user_clicks_on_the_find_vehicle_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3175381200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the vehicle reg search result is displayed",
+            "match": {
+              "location": "VehicleSearchStep.the_vehicle_reg_search_result_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Invalid registration search",
+        "description": "",
+        "id": "vehicle-inquiry;invalid-registration-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10558899699,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "An authorised user navigates to the covercheck website",
+            "match": {
+              "location": "VehicleSearchStep.an_authorised_user_navigates_to_the_covercheck_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 237914901,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The User  enters an invalid registration number in the enter reg field",
+            "match": {
+              "location": "VehicleSearchStep.the_User_enters_an_invalid_registration_number_in_the_enter_reg_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161587700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user clicks on the find vehicle link",
+            "match": {
+              "location": "VehicleSearchStep.the_user_clicks_on_the_find_vehicle_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3152553199,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "An error message is displayed",
+            "match": {
+              "location": "VehicleSearchStep.an_error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Blank Registration search",
+        "description": "",
+        "id": "vehicle-inquiry;blank-registration-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10542315600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "An authorised user navigates to the covercheck website",
+            "match": {
+              "location": "VehicleSearchStep.an_authorised_user_navigates_to_the_covercheck_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128068101,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The User leaves registration number field blank",
+            "match": {
+              "location": "VehicleSearchStep.the_User_leaves_registration_number_field_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82040300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The user clicks on the find vehicle link",
+            "match": {
+              "location": "VehicleSearchStep.the_user_clicks_on_the_find_vehicle_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3161762001,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "An error message is displayed \"Please enter a valid car registration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a valid car registration",
+                  "offset": 31
+                }
+              ],
+              "location": "VehicleSearchStep.an_error_message_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Vehicle Inquiry",
+    "description": "",
+    "id": "vehicle-inquiry",
+    "keyword": "Feature",
+    "uri": "VehicleSearch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@run"
+      }
+    ]
+  }
+]
